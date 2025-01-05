@@ -1,3 +1,12 @@
+THis readme is for the platformer template i'm working on
+
+
+
+
+
+
+
+
 README for info on how to use.
 Necessary Child Nodes
 These nodes must be attached as a child of the CharacterBody2D node for it to function properly.
