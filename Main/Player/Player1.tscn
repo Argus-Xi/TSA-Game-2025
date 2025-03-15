@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://8uyuuo8exhgi"]
+
+[ext_resource type="Script" path="res://Main/Player/player_1.gd" id="1_r6yq4"]
+[ext_resource type="Texture2D" uid="uid://1k4k4jsbv2mo" path="res://temp assets/art/playerGrey_walk1.png" id="2_5pj6p"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2cj7b"]
+radius = 16.0
+height = 40.0
+
+[node name="Player1" type="CharacterBody2D"]
+position = Vector2(296, 149)
+collision_layer = 255
+collision_mask = 255
+script = ExtResource("1_r6yq4")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_5pj6p")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_2cj7b")

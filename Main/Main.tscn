@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://btirvvm8ag1l6"]
+
+[ext_resource type="PackedScene" uid="uid://8uyuuo8exhgi" path="res://Main/Player/Player1.tscn" id="1_dbyjs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e4phf"]
+size = Vector2(252, 20)
+
+[node name="Main" type="Node"]
+
+[node name="Player1" parent="." instance=ExtResource("1_dbyjs")]
+position = Vector2(234, 172)
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+position = Vector2(162, 299)
+polygon = PackedVector2Array(2, 26, 255, 26, 255, 58, -1, 57)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Polygon2D"]
+position = Vector2(127, 36)
+shape = SubResource("RectangleShape2D_e4phf")
