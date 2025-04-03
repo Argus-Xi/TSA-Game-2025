@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://0sa12ha6yagb"]
+
+[ext_resource type="FontFile" uid="uid://dlkcg2gdkjcq4" path="res://VT323-Regular.ttf" id="1_x745c"]
+[ext_resource type="Script" path="res://timer.gd" id="2_gbbvc"]
+
+[node name="Node" type="Node"]
+script = ExtResource("2_gbbvc")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 479.0
+offset_top = 258.0
+offset_right = 643.0
+offset_bottom = 376.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_x745c")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 7.343
+one_shot = true
